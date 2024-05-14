@@ -1,9 +1,9 @@
 name: Capture Frame and Upload Image
 
 on:
-  push:
-    branches:
-      - main  # Replace 'main' with your repository's default branch if it's different
+  schedule:
+    - cron: "*/30 * * * *"
+  workflow_dispatch:  # This allows manual triggering of the workflow
 
 jobs:
   capture_frame:
