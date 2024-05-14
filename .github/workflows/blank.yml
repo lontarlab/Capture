@@ -16,7 +16,7 @@ jobs:
         run: sudo apt-get install python3-pip && pip install yt-dlp
 
       - name: Capture Frame
-        run: ffmpeg -i "$(yt-dlp -g url | head -n 1)" -vframes 1 capture.jpg
+        run: ffmpeg -i "$(yt-dlp -g https://www.youtube.com/watch?v=moQtMet7F7w | head -n 1)" -vframes 1 capture.jpg
 
       - name: Commit and Push changes
         run: |
