@@ -1,8 +1,6 @@
 name: Capture Frame and Upload Image
 
 on:
-  schedule:
-    - cron: "*/30 * * * *"
   workflow_dispatch:  # This allows manual triggering of the workflow
 
 jobs:
